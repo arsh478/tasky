@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taskify - Watch to Earn</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1 class="brand-name">
+                Task<span>ify</span>
+            </h1>
+            <div class="auth-buttons">
+                <button class="login-btn">Login</button>
+                <button class="signup-btn">Sign Up</button>
+            </div>
+        </header>
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1><span>Earn Money</span> by Watching Ads, Taking Surveys,<br> and More</h1>
+            <p class="hero-description">Start earning today with tasks that fit your schedule.</p>
+            <button class="start-btn">Start Earning Now</button>
+        </section>
+        
+        <!-- Points System -->
+        <div class="wallet">
+            <h3>Your Points: <span id="points">0</span></h3>
+            <button onclick="redeemPoints()">Redeem</button>
+        </div>            
+
+        <!-- Top Picks -->
+        <section class="section-top-picks">
+            <div class="section-header">
+                <h2>Top Picks</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="picks-grid">
+                <div class="category-card" onclick="earnPoints(10)">
+                    <h3>Surveys</h3>
+                    <p>Complete surveys to earn points.</p>
+                </div>
+                <div class="category-card" onclick="earnPoints(5)">
+                    <h3>Games</h3>
+                    <p>Play games and earn.</p>
+                </div>
+                <div class="category-card" onclick="earnPoints(7)">
+                    <h3>YouTube</h3>
+                    <p>Watch YouTube videos to earn rewards.</p>
+                </div>
+                <div class="category-card" onclick="earnPoints(3)">
+                    <h3>Instagram</h3>
+                    <p>Follow Instagram pages to earn.</p>
+                </div>
+                <div class="category-card" onclick="earnPoints(2)">
+                    <h3>Watch Ads</h3>
+                    <p>Earn by watching ads.</p>
+                </div>
+                <div class="category-card" onclick="earnPoints(15)">
+                    <h3>Referral</h3>
+                    <p>Share referral links to earn.</p>
+                </div>
+            </div>
+        </section>
+        <!--banner-->
+        <div class="banner">
+            <h2>Earn More with Taskify!</h2>
+            <p>Complete tasks daily and maximize your earnings.</p>
+        </div>        
+        
+        <!-- Leaderboard -->
+        <section class="section-leaderboard">
+            <div class="section-header">
+                <h2>Leaderboard</h2>
+                <a href="#" class="view-all">View All →</a>
+            </div>
+            <div class="leaderboard-grid">
+                <p>Coming soon...</p>
+            </div>
+        </section>   
+        <!--link-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+         <!--games-->
+         <i class="fa-solid fa-gamepad"></i> <!-- Example for games -->
+
+
+        <!-- Wallet -->
+        <div class="wallet" onclick="window.location.href='withdraw.html'">
+            <h3>Wallet</h3>
+            <p>Transactions are made here.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
